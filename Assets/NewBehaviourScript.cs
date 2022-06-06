@@ -9,25 +9,25 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        texto.tex = "Caricatura favorita";
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.V1))
+        if(Input.GetKeyDown(KeyCode.1))
         {
             texto.text = "Yo iré solo por que soy BÁRBARO";
         }
-        if(Input.GetKeyDown(KeyCode.V2))
+        if(Input.GetKeyDown(KeyCode.H))
         {
             texto.text = "Apártate cabeza de balón";
         }
-        if(Input.GetKeyDown(KeyCode.V))
+        if(Input.GetKeyDown(KeyCode.B))
         {
             texto.text = "¡Y así nacieron las chicas superrrrrrpoderosas";
         }
-        if(Input.GetKeyDown(KeyCode.V3))
+        if(Input.GetKeyDown(KeyCode.P))
         {
             texto.text = "Ferb, ¡ya se que vamos a hacer hoy!";
         }
