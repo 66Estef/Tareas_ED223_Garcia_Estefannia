@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NewScriptQuizz : MonoBehaviour
 {
-
     public TextMeshProUGUI texto;
     // Start is called before the first frame update
     void Start()
@@ -18,19 +17,22 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.M))
         {
-            texto.text="Yo iré solo porque soy BÁRBARO";
+            texto.text = "Yo ire solo porque soy BARBARO";
         }
+
         if(Input.GetKeyDown(KeyCode.H))
         {
-            texto.text="¡Apártate cabeza de balón!";
+            texto.text = "¡Apartate cabeza de balon!";
         }
+
         if(Input.GetKeyDown(KeyCode.B))
         {
-            texto.text="Y así nacieron las chicas superrrrrrpoderosas:Bombón, Burrrbuja y Bellota";
+            texto.text = "Y asi nacieron las chicas superrrrpoderosas";
         }
+
         if(Input.GetKeyDown(KeyCode.P))
         {
-            texto.text="Ferb,¡ya se que vamos a hacer hoy!";
+            texto.text = "Ferb, ¡¡ya se que vamos a hacer HOY!!";
         }
     }
-}// fin del cuerpo de class
+}
