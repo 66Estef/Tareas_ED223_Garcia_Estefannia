@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class ControladorM : MonoBehaviour
 {
-    public float Velocidad = 3f;
-
+    public float Velocidad = 5f;
+    public Rigidbody2D rb2D;
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        rb2D = gameObject.AddComponent<Rigidbody2D>();
+    }
     void Start()
     {
         
@@ -23,6 +28,11 @@ public class ControladorM : MonoBehaviour
         if(Input.GetKey(KeyCode.I))
         {
             transform.position += Vector3.left *Velocidad*Time.deltaTime;
+        }
+
+        if(Input.GetKey(KeyCode.S))
+        {
+            rb2D.AddForce(transform.up*Velocidad);
         }
     }
 }
